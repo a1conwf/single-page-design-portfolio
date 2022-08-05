@@ -1,0 +1,75 @@
+@import "./variables";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 500;
+    background-color: $lightCream;
+    color: $mediumBrown;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 700;
+    color: $black;
+}
+
+//Buttons
+
+.btn {
+    border: none;
+    outline: none;
+    border-radius: 28px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+
+    &.black,
+    &.light-red {
+        color: $lightCream;
+        transition: background-color 0.2s ease-out;
+    }
+
+    &.black {
+        background-color: $black;
+
+        &:hover {
+            background-color: $galacticBlue;
+        }
+    }
+
+    &.light-red {
+        background-color: $lightRed;
+
+        &:hover {
+            background-color: $summerYellow;
+        }
+    }
+}
+
+.button--control {
+    display: grid;
+    place-items: center;
+    width: 64px;
+    height: 64px;
+    background-color: $black;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.2s ease-out;
+
+    &:hover {
+        background-color: $galacticBlue;
+    }
+}

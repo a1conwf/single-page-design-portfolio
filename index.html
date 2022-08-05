@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Frontend Mentor | Single-page design portfolio</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+      <div class="header__top">
+        <div class="logo"></div>
+        <button class="btn black">Free Consultation</button>
+      </div>
+
+      <section class="hero">
+        <div class="hero__content">
+          <h1 class="hero__content-title">Design solutions made easy</h1>
+          <p class="hero__content-text">With over ten years of experience in various design disciplines, I’m your
+            one-stop shop for your design needs.</p>
+        </div>
+        <div class="hero__services">
+          <div class="card graphic-design">
+            <p class="card__text">Graphic Design</p>
+            <img src="./assets/pattern-graphic-design.svg" alt="pattern-graphic-design" class="card__img">
+          </div>
+          <div class="card ui-ux">
+            <p class="card__text">UI/UX</p>
+            <img src="./assets/pattern-ui-ux.svg" alt="pattern-ui-ux" class="card__img">
+          </div>
+          <div class="card apps">
+            <p class="card__text">Apps</p>
+            <img src="./assets/pattern-apps.svg" alt="pattern-apps" class="card__img">
+          </div>
+          <div class="card illustrations">
+            <p class="card__text">Illustrations</p>
+            <img src="./assets/pattern-illustrations.svg" alt="pattern-illustrations" class="card__img">
+          </div>
+          <div class="card photography">
+            <p class="card__text">Photography</p>
+            <img src="./assets/pattern-photography.svg" alt="pattern-photography" class="card__img">
+          </div>
+          <div class="card motion-graphics">
+            <p class="card__text">Motion Graphics</p>
+            <img src="./assets/pattern-motion-graphics.svg" alt="pattern-motion-graphics" class="card__img">
+          </div>
+        </div>
+      </section>
+    </div>
+  </header>
+
+  <main>
+    <section class="testimonials">
+      <div class="container">
+        <div class="testimonials__inner">
+          <img src="./assets/image-amy.webp" alt="image-amy" class="testimonials__img">
+          <div class="testimonials__content">
+            <h2 class="testimonials__title">I’m Amy, and I’d love to work on your next project</h2>
+            <p class="testimonials__text">I love working with others to create beautiful design solutions. I’ve designed
+              everything from brand illustrations to complete mobile apps. I’m also handy with a camera!</p>
+            <button class="btn light-red">Free Consultation</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="works">
+      <h3 class="works__title">My Work</h3>
+
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./assets/image-slide-1.jpg" alt="image-slide-1" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/image-slide-2.jpg" alt="image-slide-2" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/image-slide-3.jpg" alt="image-slide-3" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/image-slide-4.jpg" alt="image-slide-4" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/image-slide-5.jpg" alt="image-slide-5" />
+          </div>
+        </div>
+      </div>
+
+      <div class="button-controls">
+        <button class="button button--control prev">
+          <img src="./assets/icon-arrow-left.svg" alt="icon-arrow-left" />
+        </button>
+        <button class="button button--control next">
+          <img src="./assets/icon-arrow-right.svg" alt="icon-arrow-right" />
+        </button>
+      </div>
+    </section>
+
+    <section class="booking">
+      <div class="container">
+        <div class="booking__content">
+          <div class="booking__content-info">
+            <h2 class="booking__content-title">Book a call with me</h2>
+            <p class="booking__content-text">I’d love to have a chat to see how I can help you. The best first step is
+              for
+              us to
+              discuss your project during a free consultation. Then we can move forward from there.</p>
+          </div>
+          <div class="booking__content-btn">
+            <button class="btn light-red">Free Consultation</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="logo"></div>
+        <button class="btn black">Free Consultation</button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+  <!-- JS -->
+  <script src="./script.js"></script>
+
+</body>
+
+</html>
